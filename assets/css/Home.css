@@ -1,0 +1,71 @@
+main {
+  background: #245965;
+}
+
+.profile {
+  height: 100vh;
+}
+.profile .profile-image .image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+.profile .profile-image .submenu {
+  position: absolute;
+  right: 48%;
+  top: 110%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0.5rem;
+  min-width: 210px;
+  opacity: 0;
+  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  -moz-transition: all 0.3 ease-in-out;
+  -ms-transition: all 0.3 ease-in-out;
+  -o-transition: all 0.3 ease-in-out;
+  transform: translateY(80);
+  -webkit-transform: translateY(80);
+  -moz-transform: translateY(80);
+  -ms-transform: translateY(80);
+  -o-transform: translateY(80);
+}
+.profile .profile-image .submenu.active {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.profile .profile-image .submenu::before {
+  content: "";
+  position: absolute;
+  right: 18%;
+  top: -10px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.profile .profile-image .submenu span {
+  font-size: 0.9rem;
+  color: gray;
+}
+.profile .profile-image .submenu img {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=Home.css.map */
